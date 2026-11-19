@@ -1,0 +1,6 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0f172a"><title>Terminal Cast Viewer</title><link rel="stylesheet" href="/style.css"></head>
+<body><main class="shell"><header><span class="eyebrow">LOCAL RECORDING PLAYER</span><h1>Terminal Cast Viewer</h1><p>Replay asciinema v2 recordings without uploading them.</p></header>
+<section class="toolbar"><label class="file">Choose .cast file<input id="file" type="file" accept=".cast,.jsonl,text/plain"></label><button id="play" disabled>Play</button><button id="restart">Restart</button><label>Speed <select id="speed"><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="1.5">1.5×</option><option value="2">2×</option><option value="4">4×</option></select></label></section>
+<p id="status" class="status">Choose a local asciinema v2 recording to begin.</p><progress id="progress" max="100" value="0"></progress><label class="search">Search visible output <input id="search" type="search" placeholder="Find text"></label>
+<pre id="output" aria-live="polite">Your terminal recording will appear here.</pre><footer>Files stay in this browser tab. No network upload.</footer></main><script type="module" src="/app.js"></script></body></html>
